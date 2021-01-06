@@ -1313,6 +1313,10 @@ h1.section-title {
   font-size: 14px;
 }
 
+.footer__item-list.show {
+  display: block;
+}
+
 /* Media queries */
 
 @media (max-width: 1366px) {
@@ -1698,6 +1702,22 @@ h1.section-title {
   .header-main__menu-list {
     display: none;
   }
+
+  .header-main__menu-list.show {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #C0C0C0;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .header-main__menu-list.show li {
+    margin: 30px;
+    background-color: red;
+  }
+
   .log-in {
     margin-right: 30px;
     padding-left: 30px;

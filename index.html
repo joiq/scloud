@@ -157,7 +157,7 @@
               <span class="comparsion-more-green">Подробнее<img src="img/comparsion/arrow-down-green.svg" alt=""></span>
             </div>            
           </div>
-          <ul class="section-comparsion__item-list list-hide">
+          <ul class="section-comparsion__item-list list-hide show-hide-text" id="comparsion-list1">
             <li>удаленный</li>
             <li></li>
             <li>от 9 конфигураций</li>
@@ -196,7 +196,7 @@
               <span class="comparsion-more-orange">Подробнее<img src="img/comparsion/arrow-down-orange.svg" alt=""></span>
             </div>          
           </div>
-          <ul class="section-comparsion__item-list list-hide">
+          <ul class="section-comparsion__item-list list-hide" id="comparsion-list2">
             <li>с рабочего ПК</li>
             <li><img src="img/comparsion/dash.svg" alt="dash"></li>
             <li>1 конфигурация</li>
@@ -240,7 +240,7 @@
         <div class="section__form-inputs">
           <input class="section-form__input-name" type="text" placeholder="Имя*">
           <span class="required-field">* Поля обязательные для заполнения</span>
-          <input class="section-form__input-phone" type="text" placeholder="RU*">
+          <input class="section-form__input-phone" id="phone-input" type="text" placeholder="RU*">
           <input class="section-form__input-email" type="text" placeholder="E-mail*">
         </div>
         <div class="section__bottom">
@@ -631,8 +631,8 @@
       <div class="footer__menu">
 
         <div class="footer__menu-item">
-          <div class="footer__item-title">Типовые решения</div>
-          <ul class="footer__item-list">
+          <div class="footer__item-title" id="footerTypicalSolveTitle">Типовые решения</div>
+          <ul class="footer__item-list" id="footerTypicalSolveList">
             <li>
               <a class="footer__menu-link" href="#">1С: Бухгалтерия ПРОФ/КОРП</a>
             </li>
@@ -646,8 +646,8 @@
         </div>
 
         <div class="footer__menu-item">
-          <div class="footer__item-title">Отраслевые решения</div>
-          <ul class="footer__item-list">
+          <div class="footer__item-title" id="footerIndustryTitle">Отраслевые решения</div>
+          <ul class="footer__item-list" id="footerIndustryList">
             <li>
               <a class="footer__menu-link" href="#">
                 1С: CRM ПРОФ
@@ -663,8 +663,8 @@
         </div>
 
         <div class="footer__menu-item">
-          <div class="footer__item-title">Сервисы</div>
-          <ul class="footer__item-list">
+          <div class="footer__item-title" id="footerServicesTitle">Сервисы</div>
+          <ul class="footer__item-list" id="footerServicesList">
             <li>
               <a class="footer__menu-link" href="#">1С: Контрагент</a>
             </li>
@@ -676,8 +676,8 @@
         </div>
 
         <div class="footer__menu-item">
-          <div class="footer__item-title">Доп. возможности</div>
-          <ul class="footer__item-list">
+          <div class="footer__item-title" id="footerFeaturesTitle">Доп. возможности</div>
+          <ul class="footer__item-list" id="footerFeaturesList">
             <li>
               <a class="footer__menu-link" href="#">ФГИС Меркурий</a>
             </li>

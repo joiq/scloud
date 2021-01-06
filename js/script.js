@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $('.feedback__wrapper').slick({
     arrows: false,
     slidesToShow: 2,
@@ -15,7 +15,7 @@ $(document).ready(function() {
     ]
   });
 
-  
+
 
   $("#phone-input").mask("+7 (999) 999-9999");
 
@@ -42,5 +42,43 @@ $(document).ready(function() {
 
   // Show/hide list 
   const showMoreGreen = document.querySelector('.comparsion-more-green');
-  console.log(showMoreGreen);
+  const comparsionList = document.querySelector('#comparsion-list1');
+
+  showMoreGreen.addEventListener('click', () => {
+    comparsionList.classList.toggle('list-hide');
+  });
+
+  const showMoreOrange = document.querySelector('.comparsion-more-orange');
+  const comparsionList2 = document.querySelector('#comparsion-list2');
+
+  showMoreOrange.addEventListener('click', () => {
+    comparsionList2.classList.toggle('list-hide');
+  });
+
+  const footerTypicalSolveTitle = document.querySelector('#footerTypicalSolveTitle');
+  const footerTypicalSolveList = document.querySelector('#footerTypicalSolveList');
+  const footerIndustryTitle = document.querySelector('#footerIndustryTitle'),
+        footerIndustryList = document.querySelector('#footerIndustryList'),
+        footerServicesTitle = document.querySelector('#footerServicesTitle'),
+        footerServicesList = document.querySelector('#footerServicesList'),
+        footerFeaturesTitle = document.querySelector('#footerFeaturesTitle'),
+        footerFeaturesList = document.querySelector('#footerFeaturesList');
+
+
+  footerTypicalSolveTitle.addEventListener('click', () => {
+    footerTypicalSolveList.classList.toggle('show');
+  });
+
+  footerIndustryTitle.addEventListener('click', () => {
+    footerIndustryList.classList.toggle('show');
+  });
+
+  footerServicesTitle.addEventListener('click', () => {
+    footerServicesList.classList.toggle('show');
+  });
+
+  footerFeaturesTitle.addEventListener('click', () => {
+    footerFeaturesList.classList.toggle('show');
+  });
+
 });
