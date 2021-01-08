@@ -1135,6 +1135,10 @@ h1.section-title {
   bottom: 30px;
 }
 
+.feedback__item-text--mobile {
+  display: none;
+}
+
 /* Footer */
 
 .footer {
@@ -2096,6 +2100,8 @@ h1.section-title {
   .feedback__item .show-more::after {
     display: none;
   }
+
+  
 
   /* Footer */
 
