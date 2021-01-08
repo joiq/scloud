@@ -81,4 +81,14 @@ $(document).ready(function () {
     footerFeaturesList.classList.toggle('show');
   });
 
+  const integrationItems = document.querySelectorAll('.integration__wrapper-item--mobile');
+  const showMoreIntegrations = document.querySelector('.show-more-integrations');
+
+  showMoreIntegrations.addEventListener('click', (e) => {
+    e.preventDefault();
+    integrationItems.forEach(item => {
+      item.classList.toggle('show');
+    });
+  });
+
 });
